@@ -1,0 +1,4 @@
+com\infosys\learning\controller\LearningController.class
+com\infosys\learning\service\LearningService.class
+com\infosys\learning\dto\Person.class
+com\infosys\learning\LearningApplication.class
