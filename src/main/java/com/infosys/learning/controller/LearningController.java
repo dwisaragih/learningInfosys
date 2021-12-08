@@ -26,4 +26,9 @@ public class LearningController {
     public String getPersonNameV3(@RequestBody(required = true)Person person){
         return learningService.getNameV3(person.getName());
     }
+
+    @PostMapping(value = "/getage", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String[] getPersonAge(@RequestBody(required = true)Person person){
+        return learningService.getAge(person.getName(), person.getYearOfBirth());
+    }
 }
